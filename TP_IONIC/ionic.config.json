@@ -1,0 +1,7 @@
+{
+  "name": "TP_IONIC",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
