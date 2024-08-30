@@ -1,0 +1,24 @@
+.home-page {
+    background-image: url('/TP_IONIC/TP_IONIC/public/BackgroundHome.jpg');
+    /* Remplacez par le chemin vers votre image */
+    background-size: cover;
+    /* Ajuste la taille de l'image pour couvrir tout l'élément */
+    background-position: center;
+    /* Centre l'image dans l'élément */
+    background-repeat: no-repeat;
+    /* Évite la répétition de l'image */
+    height: 100%;
+    /* Assurez-vous que l'élément occupe toute la hauteur */
+    width: 100%;
+    /* Assurez-vous que l'élément occupe toute la largeur */
+}
+
+ion-content.md.content-ltr.hydrated {
+    background-image: url('../../../public/BackgroundHome.jpg')!important;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    --background: transparent!important;
+}

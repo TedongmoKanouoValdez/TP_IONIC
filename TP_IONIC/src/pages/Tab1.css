@@ -1,0 +1,11 @@
+ion-row.md.hydrated {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentfavory {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}

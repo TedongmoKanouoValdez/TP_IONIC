@@ -1,0 +1,35 @@
+
+.header{
+    background-color: rgba(14, 14, 14, 0.878);
+    /* display: flex; */
+    padding-top: 0px;
+}
+.search-bar{
+    display: flex;
+    background-color: rgba(14, 14, 14, 0.878);
+}
+.search{
+    max-width: 700px;
+    justify-content: end;
+}
+.Heading{
+    color: rgb(0, 132, 255);
+    font-size: 2rem;
+    justify-content: start;
+}
+.card{
+    border-radius: 5px;
+}
+.image{
+    border-radius: 40px;
+}
+.Title{
+    font-weight: bold;
+    /* text-decoration: underline; */
+}
+.Detail{
+    background-color: rgb(255, 241, 241);
+    color: white;
+    
+
+}

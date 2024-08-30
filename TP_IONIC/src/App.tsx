@@ -1,17 +1,6 @@
-import { Redirect, Route } from 'react-router-dom';
-import {
-  IonApp,
-  IonIcon,
-  IonLabel,
-  IonRouterOutlet,
-  IonTabBar,
-  IonTabButton,
-  IonTabs,
-  setupIonicReact
-} from '@ionic/react';
+import { IonApp, setupIonicReact } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { ellipse, square, triangle } from 'ionicons/icons';
-import MoviesList from './pages/MoviesList';
+import MainLayout from './MainLayout';  // Assurez-vous que le chemin d'importation est correct
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -48,23 +37,7 @@ setupIonicReact();
 const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
-      <IonTabs>
-        <IonRouterOutlet>
-          <Route path="/Movies">
-            <MoviesList/>
-          </Route>
-          <Route exact path="/">
-            <Redirect to="/Movies" />
-          </Route>
-          
-        </IonRouterOutlet>
-        <IonTabBar slot="bottom">
-          <IonTabButton tab="movies" href="/movies">
-            <IonIcon aria-hidden="true" icon={square} />
-            <IonLabel>Movies</IonLabel>
-          </IonTabButton>
-        </IonTabBar>
-      </IonTabs>
+      <MainLayout />
     </IonReactRouter>
   </IonApp>
 );
